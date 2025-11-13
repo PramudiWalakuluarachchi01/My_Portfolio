@@ -45,7 +45,7 @@ const Navbar = () => {
           </ul>
 
           {/* Hire Me Button */}
-          <button className="px-6 py-2 rounded-full ml-4 bg-linear-to-r from-teal-600 to-teal-100 hover:opacity-90 text-black font-bold transition-all">
+          <button className="px-6 py-2 rounded-full ml-4 bg-linear-to-r from-teal-600 to-teal-100 hover:opacity-50 text-black font-bold transition-all">
             Hire Me
           </button>
         </div>
