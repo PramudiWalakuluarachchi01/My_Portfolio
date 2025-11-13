@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet');
 @import "tailwindcss";
 
-*{
+/* Default font for everything else */
+body, * {
   font-family: "Roboto", sans-serif;
 }
 
-.text-outline {
-  -webkit-text-stroke: 1px #fff;
-  color: transparent;
+/* Only for cursive text */
+.font-cursive {
+  font-family: "Caveat", cursive;
 }
+
+
+.text-outline-white {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
