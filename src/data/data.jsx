@@ -117,7 +117,7 @@ export const skillsData = [
 export const navItems = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
-  { id: "skills", label: "Skills" },
+  { id: "Experience", label: "Experience" },
   { id: "portfolio", label: "Portfolio" },
   { id: "testimonials", label: "Testimonials" },
   { id: "contact", label: "Contact" },
