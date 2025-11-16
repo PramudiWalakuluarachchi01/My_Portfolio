@@ -42,72 +42,43 @@ import {
   GiNorthStarShuriken,
   GiSandsOfTime,
 } from "react-icons/gi";
-import { DiJava, DiPython, DiVisualstudio } from "react-icons/di";
+import { DiDart, DiJava, DiPython, DiVisualstudio } from "react-icons/di";
 import { TbBrandCSharp } from "react-icons/tb";
 import { IoIosStarOutline } from "react-icons/io";
+
 export const skillsData = [
   {
-    title: "Frontend",
+        title: "Technologies",
+
     skills: [
+      { name: "Dart", icon: <DiDart className="text-blue-400" /> },
       { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
       { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
-      { name: "SASS", icon: <FaSass className="text-pink-400" /> },
       { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
       { name: "React JS", icon: <FaReact className="text-cyan-400" /> },
-      { name: "Angular", icon: <FaAngular className="text-red-500" /> },
-      { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
-      { name: "Next JS", icon: <RiNextjsFill className="text-white" /> },
       {
         name: "Tailwind CSS",
         icon: <RiTailwindCssFill className="text-teal-400" />,
       },
-      {
-        name: "GSAP",
-        icon: <MdOutlineSettingsApplications className="text-green-500" />,
-      },
-      {
-        name: "Material UI",
-        icon: <GiMaterialsScience className="text-blue-400" />,
-      },
       { name: "Bootstrap", icon: <FaBootstrap className="text-purple-600" /> },
-    ],
-  },
-  {
-    title: "Backend",
-    skills: [
-      { name: "Spring Boot", icon: <SiSpring className="text-green-600" /> },
       { name: "Node JS", icon: <FaNodeJs className="text-green-400" /> },
-      { name: "Express JS", icon: <SiExpress className="text-gray-300" /> },
       { name: "MySQL", icon: <SiMysql className="text-blue-400" /> },
-      { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
       { name: "Firebase", icon: <SiFirebase className="text-yellow-500" /> },
-      { name: "PostgreSQL", icon: <SiPostgresql className="text-sky-500" /> },
-    ],
-  },
-  {
-    title: "Languages",
-    skills: [
-      { name: "C", icon: <SiC className="text-blue-400" /> },
-      { name: "C++", icon: <SiCplusplus className="text-blue-500" /> },
-      { name: "Java", icon: <DiJava className="text-red-600" /> },
-      { name: "Python", icon: <DiPython className="text-yellow-400" /> },
-      { name: "C#", icon: <TbBrandCSharp className="text-purple-400" /> },
       {
         name: "JavaScript",
         icon: <SiJavascript className="text-yellow-400" />,
       },
-      { name: "TypeScript", icon: <SiTypescript className="text-blue-400" /> },
+
     ],
   },
+ 
   {
     title: "Tools",
     skills: [
+      { name: "VS Code", icon: <DiVisualstudio className="text-blue-500" /> },
       { name: "Git", icon: <SiGit className="text-orange-500" /> },
       { name: "GitHub", icon: <SiGithub className="text-white" /> },
-      { name: "VS Code", icon: <DiVisualstudio className="text-blue-500" /> },
-      { name: "Postman", icon: <SiPostman className="text-orange-400" /> },
       { name: "Vercel", icon: <SiVercel className="text-white" /> },
-      { name: "Netlify", icon: <SiNetlify className="text-teal-400" /> },
       { name: "Figma", icon: <SiFigma className="text-pink-500" /> },
     ],
   },
@@ -118,8 +89,8 @@ export const navItems = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
   { id: "Experience", label: "Experience" },
+    { id: "Qualification", label: "Qualification" },
   { id: "portfolio", label: "Portfolio" },
-  { id: "testimonials", label: "Testimonials" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -205,3 +176,19 @@ export const experiences = [
     skills: ["React JS", "Node JS", "Express", "MongoDB"],
   },
 ];
+
+export const qualifications = [
+  {
+    id: 1,
+    duration: "2024 - 2025 (Completed)",
+    degree: "B.Sc. (Hons) in Software Engineering",
+    university: "University of Bedfordshire",
+    academy: "SLIIT CITY UNI",
+  },
+  {
+    id: 2,
+    duration: "2021 - 2024 (Completed)",
+    higher_diploma: "Higher Diploma in Information Technology",
+    university: "SLIIT CITY UNI",
+}
+]

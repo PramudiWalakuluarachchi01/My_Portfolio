@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Experience from "./components/Experience";
+import Qualification from "./components/Qualification";
+
 
 
 const App = () => {
@@ -12,6 +14,7 @@ const App = () => {
       <Hero />
       <About/>
       <Experience/>
+      <Qualification/>
     </>
   );
 };
