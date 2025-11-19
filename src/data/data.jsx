@@ -125,8 +125,9 @@ export const testimonials = [
 // Portfolio data
 export const portfolioItems = [
   {
-    title: "E-commerce Website",
-    category: "Web Design",
+    title: "BoneCare",
+    category: "Mobile Application",
+    skills: ["Flutter", "Dart", "Node.js,MySQL,Python & PyTorch,Flask"],
     image:
       "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
   },
@@ -147,7 +148,7 @@ export const experiences = [
   {
     id: 1,
     company: "Webverse Digital",
-    logo: <GiSandsOfTime />, // replace with actual logo
+    logo: <GiSandsOfTime/>, // replace with actual logo
     title: "Fullstack Developer",
     period: "April 2024 - Present",
     description:
