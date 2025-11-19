@@ -177,18 +177,17 @@ export const experiences = [
   },
 ];
 
-export const qualifications = [
+export const qualification = [
   {
     id: 1,
     duration: "2024 - 2025 (Completed)",
     degree: "B.Sc. (Hons) in Software Engineering",
-    university: "University of Bedfordshire",
-    academy: "SLIIT CITY UNI",
+    university: "University of Bedfordshire (SLIIT CITY UNI)",
   },
   {
     id: 2,
     duration: "2021 - 2024 (Completed)",
-    higher_diploma: "Higher Diploma in Information Technology",
+    degree: "Higher Diploma in Information Technology",
     university: "SLIIT CITY UNI",
 }
 ]
