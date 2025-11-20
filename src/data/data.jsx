@@ -17,6 +17,7 @@ import { ImInstagram } from "react-icons/im";
 import { MdEmail, MdOutlineSettingsApplications } from "react-icons/md";
 import { PiPhone } from "react-icons/pi";
 import { CiLocationArrow1 } from "react-icons/ci";
+import bone_care_01 from "../assets/images/bone_care_01.png";
 import {
   SiC,
   SiCplusplus,
@@ -128,8 +129,7 @@ export const portfolioItems = [
     title: "BoneCare",
     category: "Mobile Application",
     skills: ["Flutter", "Dart", "Node.js,MySQL,Python & PyTorch,Flask"],
-    image:
-      "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+    image: bone_care_01,
   },
   {
     title: "Fitness App UI",
