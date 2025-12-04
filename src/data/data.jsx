@@ -130,6 +130,7 @@ export const portfolioItems = [
     category: "Mobile Application",
     skills: ["Flutter", "Dart", "Node.js,MySQL,Python & PyTorch,Flask"],
     image: bone_care_01,
+    link: "https://github.com/PramudiWalakuluarachchi01/BoneCare"
   },
   {
     title: "Fitness App UI",

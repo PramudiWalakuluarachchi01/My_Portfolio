@@ -6,6 +6,7 @@ import Experience from "./components/Experience";
 import Qualification from "./components/Qualification";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       <Qualification/>
       <Portfolio/>
       <Contact/>
+      <Footer/>
     </>
   );
 };
