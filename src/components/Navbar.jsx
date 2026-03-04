@@ -35,6 +35,12 @@ const Navbar = () => {
             {navItems.map((item) => (
               <li
                 key={item.id}
+                onClick={() => {
+                  const section = document.getElementById(item.id);
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
                 className={`hover:text-teal-200 transition-colors cursor-pointer ${
                   activeSection === item.id ? "text-teal-200" : ""
                 }`}

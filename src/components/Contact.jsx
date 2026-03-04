@@ -7,7 +7,7 @@ import { LuLinkedin } from 'react-icons/lu'
 
 function Contact() {
   return (
-    <section id="portfolio"
+    <section id="contact"
       className="py-20 px-6 bg-linear-to-r from-[#011914] to-[#022c2b]"
     >
     <div  className="container mx-auto">

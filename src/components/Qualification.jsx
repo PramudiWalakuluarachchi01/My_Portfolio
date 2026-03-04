@@ -4,7 +4,7 @@ import { qualification } from "../data/data.jsx";
 function Qualification() {
   return (
     <section
-      id="skills"
+      id="Qualification"
       className="py-20 px-6 bg-linear-to-r from-[#011914] to-[#022c2b]"
     >
       <div className="container mx-auto">

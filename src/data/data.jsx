@@ -18,6 +18,7 @@ import { MdEmail, MdOutlineSettingsApplications } from "react-icons/md";
 import { PiPhone } from "react-icons/pi";
 import { CiLocationArrow1 } from "react-icons/ci";
 import bone_care_01 from "../assets/images/bone_care_01.png";
+import travel_app_01 from "../assets/images/travel_app_01.png";
 import {
   SiC,
   SiCplusplus,
@@ -133,10 +134,11 @@ export const portfolioItems = [
     link: "https://github.com/PramudiWalakuluarachchi01/BoneCare"
   },
   {
-    title: "Fitness App UI",
-    category: "UI/UX Design",
-    image:
-      "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+   title: "Travel_App",
+    category: "Mobile Application",
+    skills: ["Flutter", "Dart, Firebase"],
+    image: travel_app_01,
+    link: "https://github.com/PramudiWalakuluarachchi01/Travel_App"
   },
   {
     title: "Analytics Dashboard",

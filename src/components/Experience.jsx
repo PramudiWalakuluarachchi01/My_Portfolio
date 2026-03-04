@@ -8,7 +8,7 @@ function Experience() {
   const tools = skillsData.find(x => x.title.toLowerCase().includes("tools"));
 
   return (
-    <section id="skills" className="py-20 px-6 bg-linear-to-r from-[#011914] to-[#022c2b]">
+    <section id="Experience" className="py-20 px-6 bg-linear-to-r from-[#011914] to-[#022c2b]">
       <div className="container mx-auto">
 
         {/* Main Title */}

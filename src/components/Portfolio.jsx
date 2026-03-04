@@ -44,7 +44,7 @@ function Portfolio() {
 
                   {/* TECHNOLOGIES */}
                   <div className="flex flex-wrap gap-2 mt-3">
-                    {item.tags?.map((tag, idx) => (
+                    {item.skills?.map((tag, idx) => (
                       <span
                         key={idx}
                         className="px-2 py-1 text-xs bg-white/20 text-white rounded-md"
