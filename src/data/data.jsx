@@ -22,6 +22,7 @@ import bone_care_02 from "../assets/images/bone_care_02.png";
 import bone_care_03 from "../assets/images/bone_care_03.png";
 import travel_app_01 from "../assets/images/travel_app_01.png";
 import shop_app_01 from "../assets/images/shop_app_01.png";
+import weather_app_01 from "../assets/images/weather_app_01.png";
 import {
   SiC,
   SiCplusplus,
@@ -144,16 +145,24 @@ export const portfolioItems = [
   {
    title: "Travel_App",
     category: "Mobile Application",
-    skills: ["Flutter", "Dart, Firebase"],
+    skills: ["Flutter", "Dart", "Firebase"],
     images: [travel_app_01],
     link: "https://github.com/PramudiWalakuluarachchi01/Travel_App"
   },
   {
    title: "Shop_App",
     category: "Mobile Application",
-    skills: ["Flutter", "Dart, Firebase"],
+    skills: ["Flutter", "Dart", "Firebase"],
     images: [shop_app_01],
     link: "https://github.com/PramudiWalakuluarachchi01/Shop_App"
+  },
+   {
+   title: "Weather_App",
+    category: "Mobile Application",
+    skills: ["Flutter", "Dart", "OpenWeatherMap API"],
+    images: [weather_app_01],
+    description: " A Flutter mobile app that shows real-time weather and hourly forecasts using the OpenWeather API. Features include temperature, sky conditions, humidity, wind speed, and pressure, with a clean and responsive UI.",
+    link: "https://github.com/PramudiWalakuluarachchi01/Weather_Application"
   },
 ];
 export const experiences = [
