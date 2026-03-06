@@ -1,5 +1,10 @@
 import React from "react";
 import { portfolioItems } from "../data/data.jsx";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 function Portfolio() {
   return (
@@ -23,13 +28,30 @@ function Portfolio() {
               className="bg-white/10 backdrop-blur-md rounded-xl border border-white/10 p-6 flex gap-6 hover:scale-[1.02] transition-all"
             >
               {/* IMAGE LEFT */}
-              <div className="w-1/3 h-48 bg-black/10 rounded-lg flex justify-center items-center overflow-hidden">
-                <img
-                  src={item.image}
-                  className="w-full h-full object-contain"
-                  alt={item.title}
-                />
-              </div>
+             <div className="w-1/3 rounded-lg overflow-hidden">
+
+  <Swiper
+  modules={[Navigation, Pagination, Autoplay]}
+  spaceBetween={10}
+  slidesPerView={1}
+  navigation
+  pagination={{ clickable: true }}
+  autoplay={{ delay: 2500 }}
+>
+  {item.images?.map((img, i) => (
+    <SwiperSlide key={i}>
+      <div className="overflow-hidden rounded-lg">
+        <img
+          src={img}
+          alt={item.title}
+          className="w-full h-72 object-contain transition-transform duration-300 hover:scale-200 cursor-zoom-in"
+        />
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
+
+</div>
 
               {/* CONTENT RIGHT */}
               <div className="w-2/3 flex flex-col justify-between">

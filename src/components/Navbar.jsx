@@ -31,7 +31,7 @@ const Navbar = () => {
           </div>
 
           {/* Navigation Links */}
-          <ul className="hidden md:flex space-x-10 text-black text-base font-bold uppercase tracking-wide">
+          <ul className="hidden md:flex space-x-10 text-white/40 text-base font-bold uppercase tracking-wide">
             {navItems.map((item) => (
               <li
                 key={item.id}

@@ -18,7 +18,10 @@ import { MdEmail, MdOutlineSettingsApplications } from "react-icons/md";
 import { PiPhone } from "react-icons/pi";
 import { CiLocationArrow1 } from "react-icons/ci";
 import bone_care_01 from "../assets/images/bone_care_01.png";
+import bone_care_02 from "../assets/images/bone_care_02.png";
+import bone_care_03 from "../assets/images/bone_care_03.png";
 import travel_app_01 from "../assets/images/travel_app_01.png";
+import shop_app_01 from "../assets/images/shop_app_01.png";
 import {
   SiC,
   SiCplusplus,
@@ -130,21 +133,27 @@ export const portfolioItems = [
     title: "BoneCare",
     category: "Mobile Application",
     skills: ["Flutter", "Dart", "Node.js,MySQL,Python & PyTorch,Flask"],
-    image: bone_care_01,
+    images: [
+      bone_care_01,
+      bone_care_02,
+      bone_care_03,
+      bone_care_03,
+    ],
     link: "https://github.com/PramudiWalakuluarachchi01/BoneCare"
   },
   {
    title: "Travel_App",
     category: "Mobile Application",
     skills: ["Flutter", "Dart, Firebase"],
-    image: travel_app_01,
+    images: [travel_app_01],
     link: "https://github.com/PramudiWalakuluarachchi01/Travel_App"
   },
   {
-    title: "Analytics Dashboard",
-    category: "Web Development",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80",
+   title: "Shop_App",
+    category: "Mobile Application",
+    skills: ["Flutter", "Dart, Firebase"],
+    images: [shop_app_01],
+    link: "https://github.com/PramudiWalakuluarachchi01/Shop_App"
   },
 ];
 export const experiences = [

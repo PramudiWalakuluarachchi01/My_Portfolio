@@ -47,28 +47,31 @@ const Hero = () => {
               amazing together!
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-4 text-sm font-medium">
-                <span className="px-4 py-2 bg-white/20 backdrop-blur-md rounded-full">Projects</span>
-            </div>
+           
 
-            {/* Social Buttons */}
-            <div className="flex gap-5 text-gray-400 justify-center md:justify-start mt-6">
-              <button className="p-3 border border-white rounded-full text-white hover:bg-teal-400 transition-all">
-                <FaFacebook />
-              </button>
-              <button className="p-3 border border-white rounded-full text-white hover:bg-teal-400 transition-all">
-                <BsWhatsapp />
-              </button>
-              <button className="p-3 border border-white rounded-full text-white hover:bg-teal-400 transition-all">
-                <LiaLinkedin />
-              </button>
-            </div>
+           
+            
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <button className="px-6 py-1 cursor-pointer text-sm rounded-full bg-linear-to-r from-teal-400 to-teal-700 font-light text-white
-                hover:opacity-70 transition-opacity">View my works</button>
+                
 
-                <button className="px-6 py-1 cursor-pointer text-sm rounded-full bg-white/10 backdrop-blur-md font-light text-white
-                hover:opacity-70 transition-opacity">Download CV</button>
+               <div className="flex gap-4">
+
+<a
+href="/My_Portfolio/cv/Pramudi_Walakuluarachchi_CV.pdf"
+target="_blank"
+className="px-6 py-1 text-sm rounded-full bg-teal-500 text-white"
+>
+View CV
+</a>
+
+<a
+  href="/My_Portfolio/cv/Pramudi_Walakuluarachchi_CV.pdf"
+  download
+  className="px-6 py-1 cursor-pointer text-sm rounded-full bg-white/10 backdrop-blur-md font-light text-white hover:opacity-70 transition-opacity"
+>
+  Download CV
+</a>
+</div>
             </div>
           </div>
         </div>
