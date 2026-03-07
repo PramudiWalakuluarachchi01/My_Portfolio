@@ -147,6 +147,7 @@ export const portfolioItems = [
     category: "Mobile Application",
     skills: ["Flutter", "Dart", "Firebase"],
     images: [travel_app_01],
+    description: "A Flutter-based mobile application that allows users to share travel experiences, post places they visit, and interact with other travelers through likes and comments using Firebase backend services.",
     link: "https://github.com/PramudiWalakuluarachchi01/Travel_App"
   },
   {
@@ -154,6 +155,7 @@ export const portfolioItems = [
     category: "Mobile Application",
     skills: ["Flutter", "Dart", "Firebase"],
     images: [shop_app_01],
+    description: "A Flutter-based e-commerce mobile application that allows users to browse a collection of shoes, filter products by brand, search items, view product details, select sizes, and add items to a shopping cart. The app uses Provider for state management to handle cart operations and provides a clean and responsive shopping interface.",
     link: "https://github.com/PramudiWalakuluarachchi01/Shop_App"
   },
    {
