@@ -10,51 +10,54 @@ function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="py-20 px-6 bg-linear-to-r from-[#011914] to-[#022c2b]"
+      className="py-16 sm:py-20 px-4 sm:px-6 bg-linear-to-r from-[#011914] to-[#022c2b]"
     >
       <div className="container mx-auto">
+
         <h2 className="text-3xl font-bold text-center mb-2 text-outline-white text-gray-400">
           Portfolio
         </h2>
+
         <p className="text-gray-500 text-center text-lg mb-10">
           Explore some of my featured projects below
         </p>
 
-        {/* MAIN GRID */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
           {portfolioItems.map((item, index) => (
+
             <div
               key={index}
-              className="bg-white/10 backdrop-blur-md rounded-xl border border-white/10 p-6 flex gap-6 hover:scale-[1.02] transition-all"
+              className="bg-white/10 backdrop-blur-md rounded-xl border border-white/10 p-6 flex flex-col md:flex-row gap-6 hover:scale-[1.02] transition-all"
             >
-              {/* IMAGE LEFT */}
-             <div className="w-1/3 rounded-lg overflow-hidden">
 
-  <Swiper
-  modules={[Navigation, Pagination, Autoplay]}
-  spaceBetween={10}
-  slidesPerView={1}
-  navigation
-  pagination={{ clickable: true }}
-  autoplay={{ delay: 2500 }}
->
-  {item.images?.map((img, i) => (
-    <SwiperSlide key={i}>
-      <div className="overflow-hidden rounded-lg">
-        <img
-          src={img}
-          alt={item.title}
-          className="w-full h-72 object-contain transition-transform duration-300 hover:scale-200 cursor-zoom-in"
-        />
-      </div>
-    </SwiperSlide>
-  ))}
-</Swiper>
+              <div className="w-full md:w-1/3 rounded-lg overflow-hidden">
 
-</div>
+                <Swiper
+                  modules={[Navigation, Pagination, Autoplay]}
+                  spaceBetween={10}
+                  slidesPerView={1}
+                  navigation
+                  pagination={{ clickable: true }}
+                  autoplay={{ delay: 2500 }}
+                >
 
-              {/* CONTENT RIGHT */}
-              <div className="w-2/3 flex flex-col justify-between">
+                  {item.images?.map((img, i) => (
+                    <SwiperSlide key={i}>
+                      <img
+                        src={img}
+                        alt={item.title}
+                        className="w-full h-52 sm:h-64 md:h-72 object-contain"
+                      />
+                    </SwiperSlide>
+                  ))}
+
+                </Swiper>
+
+              </div>
+
+              <div className="w-full md:w-2/3 flex flex-col justify-between">
+
                 <div>
                   <h3 className="text-xl font-semibold text-white">
                     {item.title}
@@ -64,7 +67,6 @@ function Portfolio() {
                     {item.description}
                   </p>
 
-                  {/* TECHNOLOGIES */}
                   <div className="flex flex-wrap gap-2 mt-3">
                     {item.skills?.map((tag, idx) => (
                       <span
@@ -75,21 +77,25 @@ function Portfolio() {
                       </span>
                     ))}
                   </div>
+
                 </div>
 
-                {/* BUTTON */}
                 <div className="mt-4">
                   <a
                     href={item.link}
                     target="_blank"
                     className="px-4 py-3 cursor-pointer bg-linear-to-r from-teal-400 to-teal-600 rounded-md text-sm hover:opacity-70 transition-opacity"
-                  > 
+                  >
                     View Project
                   </a>
                 </div>
+
               </div>
+
             </div>
+
           ))}
+
         </div>
       </div>
     </section>

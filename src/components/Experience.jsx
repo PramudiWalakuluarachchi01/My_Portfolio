@@ -3,15 +3,22 @@ import { skillsData } from "../data/data.jsx";
 import { motion } from "framer-motion";
 
 function Experience() {
-  // Extract the two categories
-  const technologies = skillsData.find(x => x.title.toLowerCase().includes("technologies"));
-  const tools = skillsData.find(x => x.title.toLowerCase().includes("tools"));
+
+  const technologies = skillsData.find(x =>
+    x.title.toLowerCase().includes("technologies")
+  );
+
+  const tools = skillsData.find(x =>
+    x.title.toLowerCase().includes("tools")
+  );
 
   return (
-    <section id="Experience" className="py-20 px-6 bg-linear-to-r from-[#011914] to-[#022c2b]">
+    <section
+      id="Experience"
+      className="py-16 sm:py-20 px-4 sm:px-6 bg-linear-to-r from-[#011914] to-[#022c2b]"
+    >
       <div className="container mx-auto">
 
-        {/* Main Title */}
         <h2 className="text-3xl font-bold text-center mb-2 text-outline-white text-gray-400">
           Experience
         </h2>
@@ -20,12 +27,11 @@ function Experience() {
           Technologies and Tools I Work With
         </p>
 
-        {/* ------------------------- TECHNOLOGIES ------------------------- */}
         <h3 className="text-2xl font-semibold text-gray-300 mb-6 text-center">
           Technologies
         </h3>
 
-        <div className="grid sm:grid-cols- md:grid-cols-6 gap-30 mb-18">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-14">
           {technologies.skills.map((skill, index) => (
             <motion.div
               key={index}
@@ -36,22 +42,21 @@ function Experience() {
                 border: "1px solid oklch(77.7%, 0.152 181.912)",
               }}
               transition={{ type: "spring", stiffness: 120, damping: 12 }}
-              className="w-46 h-46 bg-white/10 backdrop-blur-md text-gray-300 
-                         rounded-xl border border-white/10 flex flex-col 
+              className="w-full h-40 sm:h-44 md:h-46 bg-white/10 backdrop-blur-md text-gray-300
+                         rounded-xl border border-white/10 flex flex-col
                          items-center justify-center gap-4 shadow-md"
             >
-              <div className="text-7xl">{skill.icon}</div>
+              <div className="text-6xl">{skill.icon}</div>
               <span className="text-md font-medium">{skill.name}</span>
             </motion.div>
           ))}
         </div>
 
-        {/* ------------------------- TOOLS ------------------------- */}
         <h3 className="text-2xl font-semibold text-gray-300 mb-6 text-center">
           Tools
         </h3>
 
-        <div className="grid  sm:grid-cols-3  md:grid-cols-5 gap-30 mb-18">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-14">
           {tools.skills.map((skill, index) => (
             <motion.div
               key={index}
@@ -62,11 +67,11 @@ function Experience() {
                 border: "1px solid oklch(77.7%, 0.152 181.912)",
               }}
               transition={{ type: "spring", stiffness: 120, damping: 12 }}
-              className="w-46 h-46 bg-white/10 backdrop-blur-md text-gray-300 
-                         rounded-xl border border-white/10 flex flex-col 
+              className="w-full h-40 sm:h-44 md:h-46 bg-white/10 backdrop-blur-md text-gray-300
+                         rounded-xl border border-white/10 flex flex-col
                          items-center justify-center gap-5 shadow-md"
             >
-              <div className="text-6xl">{skill.icon}</div>
+              <div className="text-5xl">{skill.icon}</div>
               <span className="text-md font-medium">{skill.name}</span>
             </motion.div>
           ))}

@@ -140,6 +140,7 @@ export const portfolioItems = [
       bone_care_03,
       bone_care_03,
     ],
+    description: "Bone Care is a healthcare mobile application built with Flutter that helps users monitor bone health and manage physiotherapy. It includes an AI-based X-ray analysis module using a PyTorch deep learning model to detect knee osteoarthritis stages, along with exercise guides, progress tracking, and a social platform. The backend is developed using Node.js, and the AI model is served through a Python Flask API.",
     link: "https://github.com/PramudiWalakuluarachchi01/BoneCare"
   },
   {
@@ -214,4 +215,18 @@ export const qualification = [
     degree: "Higher Diploma in Information Technology",
     university: "SLIIT CITY UNI",
 }
-]
+];
+export const Contact = [
+  {
+    id: 1,
+    linkedin: "www.linkedin.com/in/pramudi-walakuluarachchi-45988026a",
+  },
+  {
+    id: 2,
+    github: "www.github.com/PramudiWalakuluarachchi01",
+  },
+  {
+    id: 3,
+    email: "pramudinethmini01@gmail.com",
+}
+];

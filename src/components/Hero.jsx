@@ -1,19 +1,16 @@
 import React, { Fragment } from "react";
 import AnimatedTitles from "./utils/AnimatedTitles";
-import { LiaLinkedin } from "react-icons/lia";
-import { FaFacebook } from "react-icons/fa";
-import { BsWhatsapp } from "react-icons/bs";
 
 const Hero = () => {
   return (
     <Fragment>
       <section
         id="home"
-        className="relative min-h-screen flex justify-center items-center 
-                   bg-linear-to-b from-teal-900 to-teal-800 
-                   pt-16 pb-20 overflow-hidden"
+        className="relative min-h-screen flex justify-center items-center
+        bg-linear-to-b from-teal-900 to-teal-800
+        pt-26 pb-20 overflow-hidden"
       >
-        {/* Wave SVG at bottom */}
+
         <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-0">
           <svg
             className="relative block w-[calc(100%+1.3px)] h-[100px]"
@@ -31,48 +28,44 @@ const Hero = () => {
           </svg>
         </div>
 
-        {/* Content */}
-        <div className="relative z-10 container mx-auto px-6 flex flex-col md:flex-row items-center justify-center text-center md:text-left">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-center text-center md:text-left">
+
           <div className="flex-1">
+
             <h3 className="text-teal-200 text-lg mb-4">Hello,</h3>
-            <h1 className="text-white text-5xl font-extrabold font-cursive">
+
+            <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold font-cursive">
               I'm Pramudi Walakuluarachchi
             </h1>
 
             <AnimatedTitles />
 
-            <p className="text-teal-100 mt-6 mb-8 max-w-lg mx-auto md:mx-0">
+            <p className="text-teal-100 mt-6 mb-8 max-w-md sm:max-w-lg mx-auto md:mx-0">
               I'm a passionate front-end developer specializing in creating
               dynamic and beautiful mobile applications. Let's build something
               amazing together!
             </p>
 
-           
+            <div className="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
 
-           
-            
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                
+              <a
+                href="/My_Portfolio/cv/Pramudi_Walakuluarachchi_CV.pdf"
+                target="_blank"
+                className="px-6 py-1 text-sm rounded-full bg-teal-500 text-white"
+              >
+                View CV
+              </a>
 
-               <div className="flex gap-4">
+              <a
+                href="/My_Portfolio/cv/Pramudi_Walakuluarachchi_CV.pdf"
+                download
+                className="px-6 py-1 cursor-pointer text-sm rounded-full bg-white/10 backdrop-blur-md font-light text-white hover:opacity-70 transition-opacity"
+              >
+                Download CV
+              </a>
 
-<a
-href="/My_Portfolio/cv/Pramudi_Walakuluarachchi_CV.pdf"
-target="_blank"
-className="px-6 py-1 text-sm rounded-full bg-teal-500 text-white"
->
-View CV
-</a>
-
-<a
-  href="/My_Portfolio/cv/Pramudi_Walakuluarachchi_CV.pdf"
-  download
-  className="px-6 py-1 cursor-pointer text-sm rounded-full bg-white/10 backdrop-blur-md font-light text-white hover:opacity-70 transition-opacity"
->
-  Download CV
-</a>
-</div>
             </div>
+
           </div>
         </div>
       </section>
