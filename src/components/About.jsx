@@ -12,7 +12,7 @@ const About = () => {
           <span className="text-outline"> me</span>
         </h2>
 
-        <p className="text-gray-500 text-center text-sm sm:text-base mb-12">
+        <p className="text-gray-500 text-center text-lg sm:text-base mb-12">
           Get to know more about my background and experience.
         </p>
 

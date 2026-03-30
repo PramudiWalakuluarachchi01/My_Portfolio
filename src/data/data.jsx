@@ -20,9 +20,15 @@ import { CiLocationArrow1 } from "react-icons/ci";
 import bone_care_01 from "../assets/images/bone_care_01.png";
 import bone_care_02 from "../assets/images/bone_care_02.png";
 import bone_care_03 from "../assets/images/bone_care_03.png";
+import bone_care_04 from "../assets/images/bone_care_04.png";
 import travel_app_01 from "../assets/images/travel_app_01.png";
 import shop_app_01 from "../assets/images/shop_app_01.png";
 import weather_app_01 from "../assets/images/weather_app_01.png";
+import banana_game_01 from "../assets/images/banana_game_01.png";
+import banana_game_02 from "../assets/images/banana_game_02.png";
+import banana_game_03 from "../assets/images/banana_game_03.png";
+import banana_game_04 from "../assets/images/banana_game_04.png";
+import cloathing01 from "../assets/images/cloathing01.png";
 import {
   SiC,
   SiCplusplus,
@@ -70,10 +76,7 @@ export const skillsData = [
       { name: "Node JS", icon: <FaNodeJs className="text-green-400" /> },
       { name: "MySQL", icon: <SiMysql className="text-blue-400" /> },
       { name: "Firebase", icon: <SiFirebase className="text-yellow-500" /> },
-      {
-        name: "JavaScript",
-        icon: <SiJavascript className="text-yellow-400" />,
-      },
+      
 
     ],
   },
@@ -138,7 +141,7 @@ export const portfolioItems = [
       bone_care_01,
       bone_care_02,
       bone_care_03,
-      bone_care_03,
+      bone_care_04,
     ],
     description: "Bone Care is a healthcare mobile application built with Flutter that helps users monitor bone health and manage physiotherapy. It includes an AI-based X-ray analysis module using a PyTorch deep learning model to detect knee osteoarthritis stages, along with exercise guides, progress tracking, and a social platform. The backend is developed using Node.js, and the AI model is served through a Python Flask API.",
     link: "https://github.com/PramudiWalakuluarachchi01/BoneCare"
@@ -167,6 +170,20 @@ export const portfolioItems = [
     description: " A Flutter mobile app that shows real-time weather and hourly forecasts using the OpenWeather API. Features include temperature, sky conditions, humidity, wind speed, and pressure, with a clean and responsive UI.",
     link: "https://github.com/PramudiWalakuluarachchi01/Weather_Application"
   },
+  {
+    title: "Banana_Math_Game",
+category: "Web Application",
+skills: ["React", "Firebase", "Tailwind CSS", "React Router", "Framer Motion"],
+images: [
+  banana_game_01,
+  banana_game_02,
+  banana_game_03,
+  banana_game_04,
+],
+description: "Banana Math Game is an interactive web-based quiz game built with React where players solve banana-themed mathematical puzzles under time pressure. The game features multiple difficulty levels, a countdown timer, a lives system, and bonus math challenges that appear during gameplay. Firebase Authentication is used for user login and account management, while the Firebase Realtime Database stores player scores and leaderboard rankings. The application also includes animated UI elements, a scoreboard system for tracking top players, and responsive gameplay designed to make learning math fun and engaging.",
+link: "https://github.com/PramudiWalakuluarachchi01/banana-game"
+  },
+
 ];
 export const experiences = [
   {
@@ -216,6 +233,14 @@ export const qualification = [
     university: "SLIIT CITY UNI",
 }
 ];
+export const uiuxItems = [
+ {
+    images: [cloathing01],
+    link: "https://www.figma.com/design/6cBl7HnW6GLNrIcn43qCjU/Untitled?node-id=18-828&t=Aw1f4fDbBs3TN8Jh-1"
+  },
+
+];
+
 export const Contact = [
   {
     id: 1,

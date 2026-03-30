@@ -64,29 +64,32 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-        {menuOpen && (
-          <div className="md:hidden bg-[#011914]/90 backdrop-blur-sm absolute top-full left-0 w-full py-4">
-            <ul className="flex flex-col space-y-4 text-center text-white/90 font-bold uppercase">
-              {navItems.map((item) => (
-                <li
-                  key={item.id}
-                  onClick={() => {
-                    const section = document.getElementById(item.id);
-                    if (section) {
-                      section.scrollIntoView({ behavior: "smooth" });
-                      setMenuOpen(false); // Close menu after click
-                    }
-                  }}
-                  className={`hover:text-teal-200 transition-colors cursor-pointer ${
-                    activeSection === item.id ? "text-teal-200" : ""
-                  }`}
-                >
-                  {item.label}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+       {menuOpen && (
+  <div
+    className="md:hidden bg-[#011914]/90 backdrop-blur-sm absolute top-full left-0 w-full py-4
+               transition-all duration-300 ease-in-out opacity-100 transform translate-y-0"
+  >
+    <ul className="flex flex-col space-y-4 text-center text-white/90 font-bold uppercase">
+      {navItems.map((item) => (
+        <li
+          key={item.id}
+          onClick={() => {
+            const section = document.getElementById(item.id);
+            if (section) {
+              section.scrollIntoView({ behavior: "smooth" });
+              setMenuOpen(false); // Close menu after click
+            }
+          }}
+          className={`hover:text-teal-200 transition-all duration-300 cursor-pointer ${
+            activeSection === item.id ? "text-teal-200" : ""
+          }`}
+        >
+          {item.label}
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
       </nav>
     </Fragment>
   );

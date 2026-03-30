@@ -1,5 +1,7 @@
 import React from "react";
 import { portfolioItems } from "../data/data.jsx";
+
+import { uiuxItems } from "../data/data.jsx"; // new data array
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -22,10 +24,12 @@ function Portfolio() {
           Explore some of my featured projects below
         </p>
 
+
+        {/* DEVELOPMENT PROJECTS */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
-          {portfolioItems.map((item, index) => (
 
+          {portfolioItems.map((item, index) => (
             <div
               key={index}
               className="bg-white/10 backdrop-blur-md rounded-xl border border-white/10 p-6 flex flex-col md:flex-row gap-6 hover:scale-[1.02] transition-all"
@@ -77,7 +81,6 @@ function Portfolio() {
                       </span>
                     ))}
                   </div>
-
                 </div>
 
                 <div className="mt-4">
@@ -93,10 +96,41 @@ function Portfolio() {
               </div>
 
             </div>
-
           ))}
 
         </div>
+
+        {/* UI / UX DESIGN SECTION */}
+      <div className="mt-16">
+  <h2 className="text-3xl font-bold text-center mb-6 text-gray-400">
+    UI/UX Designs
+  </h2>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {uiuxItems.map((item, index) => (
+      <div
+        key={index}
+        className="relative bg-white/10 backdrop-blur-md rounded-xl overflow-hidden hover:scale-[1.02] transition-transform"
+      >
+        <img
+          src={item.image}
+          alt={`UIUX-${index}`}
+          className="w-full h-64 object-cover"
+        />
+        <div className="absolute inset-0 flex justify-center items-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity">
+          <a
+            href={item.link}
+            target="_blank"
+            className="px-4 py-2 bg-teal-500 text-white rounded-md hover:bg-teal-600 transition-colors"
+          >
+            View Design
+          </a>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
       </div>
     </section>
   );
