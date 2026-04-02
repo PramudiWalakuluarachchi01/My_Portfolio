@@ -235,7 +235,7 @@ export const qualification = [
 ];
 export const uiuxItems = [
  {
-    images: [cloathing01],
+    images: [cloathing01.png],
     link: "https://www.figma.com/design/6cBl7HnW6GLNrIcn43qCjU/Untitled?node-id=18-828&t=Aw1f4fDbBs3TN8Jh-1"
   },
 
