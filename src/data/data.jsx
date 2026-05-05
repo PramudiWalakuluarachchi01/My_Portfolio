@@ -28,7 +28,9 @@ import banana_game_01 from "../assets/images/banana_game_01.png";
 import banana_game_02 from "../assets/images/banana_game_02.png";
 import banana_game_03 from "../assets/images/banana_game_03.png";
 import banana_game_04 from "../assets/images/banana_game_04.png";
-import cloathing01 from "../assets/images/cloathing01.png";
+import clothing01 from "../assets/images/ui/clothing01.png";
+import bakery_shop01 from "../assets/images/ui/bakery_shop01.png";
+import medi_care_app01 from "../assets/images/ui/medi_care_app01.png";
 import {
   SiC,
   SiCplusplus,
@@ -235,8 +237,16 @@ export const qualification = [
 ];
 export const uiuxItems = [
  {
-    images: [cloathing01.png],
+    images: [clothing01],
     link: "https://www.figma.com/design/6cBl7HnW6GLNrIcn43qCjU/Untitled?node-id=18-828&t=Aw1f4fDbBs3TN8Jh-1"
+  },
+  {
+    images: [bakery_shop01],
+    link: "https://www.figma.com/design/dfRnIb22qaRQ8RGFv3n9Am/Bakery_Shop_Design?node-id=1-124&t=PtpXpelcJTLZ6bNF-1"
+  },
+  {
+    images: [medi_care_app01],
+    link: "https://www.figma.com/design/KbL9pWoWI39UEDCEAaac8H/MediCare_Connect_Mobile_App?node-id=0-1&t=PeVDKL8aiK2sUQxy-1"
   },
 
 ];

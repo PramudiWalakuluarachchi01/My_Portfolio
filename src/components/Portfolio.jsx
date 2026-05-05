@@ -113,7 +113,7 @@ function Portfolio() {
         className="relative bg-white/10 backdrop-blur-md rounded-xl overflow-hidden hover:scale-[1.02] transition-transform"
       >
         <img
-          src={item.image}
+          src={item.images[0]} // Assuming each item has an 'image' property that is an array
           alt={`UIUX-${index}`}
           className="w-full h-64 object-cover"
         />
@@ -121,7 +121,7 @@ function Portfolio() {
           <a
             href={item.link}
             target="_blank"
-            className="px-4 py-2 bg-teal-500 text-white rounded-md hover:bg-teal-600 transition-colors"
+            className="px-4 py-2 bg-linear-to-r from-teal-400 to-teal-800  text-white rounded-md hover:bg-teal-600 transition-colors"
           >
             View Design
           </a>
@@ -133,6 +133,7 @@ function Portfolio() {
 
       </div>
     </section>
+    
   );
 }
 
